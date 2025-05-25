@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Pulse - Анонсы игр</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-gamepad"></i>
+                <h1>Game Pulse</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">Главная</a></li>
+                    <li><a href="#">Новинки</a></li>
+                    <li><a href="#">Скоро выйдут</a></li>
+                    <li><a href="#">Топ игр</a></li>
+                    <li><a href="#">О нас</a></li>
+                </ul>
+            </nav>
+            <div class="search">
+                <input type="text" placeholder="Поиск игр...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Самые ожидаемые релизы 2024</h2>
+                <p>Будь первым, кто узнает о грядущих хитах игровой индустрии</p>
+                <button class="btn">Смотреть анонсы</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="games">
+        <div class="container">
+            <h2 class="section-title">Последние анонсы</h2>
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">Все</button>
+                <button class="filter-btn" data-filter="pc">PC</button>
+                <button class="filter-btn" data-filter="ps5">PS5</button>
+                <button class="filter-btn" data-filter="xbox">Xbox</button>
+                <button class="filter-btn" data-filter="switch">Switch</button>
+            </div>
+            <div class="games-grid" id="games-container">
+                <!-- Игры будут загружены через JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <section class="upcoming">
+        <div class="container">
+            <h2 class="section-title">Скоро выйдут</h2>
+            <div class="upcoming-slider">
+                <div class="slider-container" id="upcoming-slider">
+                    <!-- Слайды будут загружены через JavaScript -->
+                </div>
+                <button class="slider-btn prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="slider-btn next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <div class="container">
+            <h2>Подпишись на рассылку</h2>
+            <p>Получай первым свежие анонсы и эксклюзивные материалы</p>
+            <form id="subscribe-form">
+                <input type="email" placeholder="Ваш email" required>
+                <button type="submit" class="btn">Подписаться</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>Game Pulse</h3>
+                    <p>Лучший источник информации об игровых новинках и релизах</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Разделы</h3>
+                    <ul>
+                        <li><a href="#">Новинки</a></li>
+                        <li><a href="#">Скоро выйдут</a></li>
+                        <li><a href="#">Топ игр</a></li>
+                        <li><a href="#">Обзоры</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Платформы</h3>
+                    <ul>
+                        <li><a href="#">PC</a></li>
+                        <li><a href="#">PlayStation 5</a></li>
+                        <li><a href="#">Xbox Series X</a></li>
+                        <li><a href="#">Nintendo Switch</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 Game Pulse. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
